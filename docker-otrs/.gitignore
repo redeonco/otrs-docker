@@ -1,0 +1,6 @@
+*.env
+otrs/backup
+*~
+config/
+volumes*
+.directory
