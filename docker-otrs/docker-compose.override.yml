@@ -2,11 +2,11 @@ version: '3'
 
 services:
   otrs:
-    image: juanluisbaptiste/otrs:dev
-    build: otrs
+    image: redeonco/otrs:latest
+    build: rede_onco-otrs
   mariadb:
-    image: juanluisbaptiste/otrs-mariadb:dev
-    build: mariadb
+    image: redeonco/otrs-mariadb:latest
+    build: rede_onco-otrs_mariadb
 # If you need access to the database, uncomment this service
 #  adminer:
 #      image: adminer:standalone
