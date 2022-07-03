@@ -1,5 +1,5 @@
 FROM mariadb:10.1
-LABEL maintainer="Juan Luis Baptiste <juan.baptiste@gmail.com>"
+LABEL maintainer="TI Rede Onco <ti@oncoradium.com.br>"
 ENV MYSQL_ROOT_PASSWORD changeme
 
 #mariadb image runs as mysql user (uid 27) but we need to do some configuration
