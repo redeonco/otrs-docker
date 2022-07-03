@@ -2,9 +2,9 @@ version: '3'
 
 services:
   otrs:
-    image: juanluisbaptiste/otrs:latest
+    image: redeonco/otrs:latest
     ports:
-      - '80:80'
+      - '90:80'
     # If running behind a proxy container, expose the ports instead
     # and link the proxy container to this one.
     #  expose:
@@ -24,7 +24,7 @@ services:
       - ./volumes/db_upgrade:/opt/otrs/db_upgrade
       - /etc/localtime:/etc/localtime:ro
   mariadb:
-    image: juanluisbaptiste/otrs-mariadb:latest
+    image: redeonco/otrs-mariadb:latest
     expose:
       - "3306"
     env_file: .env
