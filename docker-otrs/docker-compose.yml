@@ -3,8 +3,7 @@ version: '3'
 services:
   otrs:
     image: redeonco/otrs:latest
-    restart: always
-    network: rede_interna
+    restart: always    
     ports:
       - '90:80'
     # If running behind a proxy container, expose the ports instead
@@ -27,7 +26,6 @@ services:
       - /etc/localtime:/etc/localtime:ro
   mariadb:
     restart: always
-    network: rede_interna
     image: redeonco/otrs-mariadb:latest
     expose:
       - "3306"
