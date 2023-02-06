@@ -23,6 +23,7 @@ services:
       - ./backups:/var/otrs/backups
       - ./volumes/addons:/opt/otrs/addons
       - ./volumes/db_upgrade:/opt/otrs/db_upgrade
+      - ./cron:/var/spool/cron
       - /etc/localtime:/etc/localtime:ro
   mariadb:
     restart: always
